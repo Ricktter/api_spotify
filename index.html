@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax ejemplo</title>
+	<!--Import Google Icon Font-->
+	  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <!-- Compiled and minified CSS -->
+	  <!-- Materialize css http://materializecss.com/ -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	<section>
+		<h1>Spotify buscador</h1>
+		<div class="row">
+	    <form id="myForm" class="col s12">
+	      <div class="row">
+	        <div class="input-field col s3">
+				    <select name="type" id="type">
+				      <option value="album">Album</option>
+				      <option value="artist">Artist</option>
+				      <option value="playlist">Playlist</option>
+				      <option value="track">Track</option>
+				    </select>
+				    <label>Tipo de busqueda</label>
+				  </div>
+		      <div class="col s12">
+		        <div class="input-field inline">
+		          <input id="q" type="text" name="q" class="validate">
+		          <label for="q">Query</label>
+			        <button class="btn waves-effect waves-light" type="button" id="sub">Buscar
+						    <i class="material-icons right">search</i>
+							</button>
+			      </div>
+		      </div>
+	      </div>
+	    </form>
+	  </div>
+	</section>
+	<section>
+	  <div id="resultados" class="row">
+	    <!-- Aqui es donde se agregaran las tarjetas con los datos de los artistas -->
+   	</div>	
+	</section>
+	
+	<!-- import Jquery -->
+	<script src="js/jquery-3.1.1.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<!-- js propio -->
+  <script src="js/main.js"></script>
+</body>
+</html>
